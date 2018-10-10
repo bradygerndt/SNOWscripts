@@ -1,0 +1,2 @@
+# SNOWscripts
+Useful ServiceNow scripts
