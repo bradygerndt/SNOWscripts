@@ -21,7 +21,7 @@ new DiscoverySensor({
 	updateAPCIs: function (aps) {
 		var updatedAps = [];
 		var json = new JSON();
-		aps.forEach(function (ap) {
+		aps.forEach(function (ap) {					
 			var payload = {
 				"items": [
 					{
