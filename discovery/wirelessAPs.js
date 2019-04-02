@@ -13,15 +13,14 @@ new DiscoverySensor({
 			//get details from Airespace MIB
 			this.appendProperties(ap, bsnAPTable[entry], "@instance");
 			ap.model_id = this.getAPMakeandModel(wcMf, ap.bsnAPModel);
-			this.updateAPCIs(aps);
 			aps.push(ap);
 		}
-
+		this.updateAPCIs(aps);
 	},
 	updateAPCIs: function (aps) {
 		var updatedAps = [];
 		var json = new JSON();
-		aps.forEach(function (ap) {					
+		aps.forEach(function (ap) {
 			var payload = {
 				"items": [
 					{
